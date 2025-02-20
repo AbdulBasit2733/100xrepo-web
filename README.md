@@ -22,7 +22,7 @@ A modern, full-stack monorepo template for building scalable applications with N
 1. Clone the repository
 2. Navigate to the project directory:
    ```bash
-   cd create-100xrepo
+   cd project-name
    ```
 3. Install dependencies:
    ```bash
