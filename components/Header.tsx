@@ -3,10 +3,10 @@ import Link from "next/link"
 
 export default function Header() {
   return (
-    <header className="py-4 px-4 sm:px-6 lg:px-8 bg-gray-900 border-b border-gray-800">
-      <div className="flex justify-between items-center max-w-7xl mx-auto">
+    <header className="relative overflow-hidden bg-gray-900  py-4 px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 flex justify-between items-center max-w-6xl mx-auto">
         <div className="flex items-center">
-          <Link href="/" className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400">
+          <Link href="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-green-400">
             100xrepo
           </Link>
         </div>
