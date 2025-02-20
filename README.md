@@ -19,4 +19,16 @@ A modern, full-stack monorepo template for building scalable applications with N
 
 ## Getting Started
 
-1. Clone the repository:
+1. Clone the repository
+2. Navigate to the project directory:
+   ```bash
+   cd create-100xrepo
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
