@@ -1,4 +1,5 @@
 import { Github, Twitter } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   return (
@@ -8,12 +9,12 @@ export default function Footer() {
           <p className="text-gray-400">© 2025 100xrepo. MIT License.</p>
         </div>
         <div className="flex space-x-4">
-          <a href="https://github.com/AbdulBasit2733" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+          <Link  href="https://github.com/AbdulBasit2733" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
             <Github className="h-6 w-6" />
-          </a>
-          <a href="https://x.com/Abdul_2003_" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+          </Link>
+          <Link href="https://x.com/Abdul_2003_" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
             <Twitter className="h-6 w-6" />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

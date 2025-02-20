@@ -1,6 +1,6 @@
 "use client"
 import { Button } from "@/components/ui/button"
-import { Terminal, Copy } from "lucide-react"
+import { Copy, Check } from "lucide-react"
 import { useState } from "react";
 
 export default function CTA() {
@@ -23,10 +23,9 @@ export default function CTA() {
           onClick={copyToClipboard}
           className="h-8 w-8 text-gray-400 hover:text-white hover:bg-gray-700"
         >
-          <span id="copyBtn"><Copy className="h-4 w-4" /></span>
+          {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
         </Button>
       </div>
     </section>
   )
 }
-
