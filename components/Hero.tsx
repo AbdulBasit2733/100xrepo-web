@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Copy, Check } from "lucide-react";
 import { useState } from "react";
 import { Spotlight } from "@/components/ui/spotlight-new";
+import Link from "next/link";
 
 export default function Hero() {
   const [copied, setCopied] = useState(false);
@@ -12,8 +13,6 @@ export default function Hero() {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-
-
 
   return (
     <section className="relative overflow-hidden bg-gray-900 antialiased bg-grid-white/[0.02]">
@@ -36,7 +35,14 @@ export default function Hero() {
 
         <div className="flex justify-center items-center gap-x-2 mt-4">
           <div className="bg-gray-800 rounded-lg p-4 inline-flex items-center gap-2">
-            <code className="text-green-400">npx create-100xrepo my-project</code>
+            <Link
+              href="https://www.npmjs.com/package/create-100xrepo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-green-400 hover:text-green-300"
+            >
+              <code>npx create-100xrepo my-project</code>
+            </Link>
             <Button 
               variant="ghost" 
               size="icon"

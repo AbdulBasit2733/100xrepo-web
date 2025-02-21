@@ -1,18 +1,17 @@
-import { Layers, Palette, Cog, Plug, Database, Package, Smartphone, Code, Server } from "lucide-react"
+import { Layers, Palette, Cog, Plug, Database, Package, Smartphone, Code } from "lucide-react"
 
 const features = [
   { icon: Layers, title: "Turbo Repo Monorepo", description: "Efficient monorepo structure" },
   { icon: Palette, title: "Frontend: Next.js", description: "Modern frontend setup" },
   { icon: Cog, title: "Backend: Express", description: "Powerful HTTP server" },
   { icon: Plug, title: "WebSocket Server", description: "Real-time communication" },
-  { icon: Database, title: "Database: PostgreSQL", description: "Flexible database options" },
+  { icon: Database, title: "Database: PostgreSQL & MongoDB", description: "Flexible database options" },
   { icon: Package, title: "Uses pnpm", description: "Fast package management" },
+  { icon: Smartphone, title: "React Native + Expo", description: "Cross-platform mobile development" },
 ]
 
 const upcomingFeatures = [
-  { icon: Smartphone, title: "React Native + Expo", description: "Cross-platform mobile development" },
   { icon: Code, title: "React 19 Support", description: "Latest React features and improvements" },
-  { icon: Server, title: "Enhanced MongoDB Integration", description: "Advanced database capabilities" }
 ]
 
 export default function Features() {

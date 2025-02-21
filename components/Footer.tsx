@@ -1,4 +1,4 @@
-import { Github, Twitter } from "lucide-react"
+import { Github, Package, Twitter } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -11,6 +11,14 @@ export default function Footer() {
         <div className="flex space-x-4">
           <Link  href="https://github.com/AbdulBasit2733" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
             <Github className="h-6 w-6" />
+          </Link>
+          <Link 
+            href="https://www.npmjs.com/package/create-100xrepo" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white flex items-center gap-2"
+          >
+            <Package className="h-5 w-5" />
           </Link>
           <Link href="https://x.com/Abdul_2003_" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
             <Twitter className="h-6 w-6" />

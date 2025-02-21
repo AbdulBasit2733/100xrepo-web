@@ -1,4 +1,4 @@
-import { Github } from "lucide-react"
+import { Github, Package } from "lucide-react"
 import Link from "next/link"
 
 export default function Header() {
@@ -20,6 +20,15 @@ export default function Header() {
           >
             <Github className="h-5 w-5" />
             <span>GitHub</span>
+          </Link>
+          <Link 
+            href="https://www.npmjs.com/package/create-100xrepo" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-white flex items-center gap-2"
+          >
+            <Package className="h-5 w-5" />
+            <span>NPM</span>
           </Link>
         </nav>
       </div>
