@@ -1,4 +1,4 @@
-import { Layers, Palette, Cog, Plug, Database, Package, Smartphone, Code } from "lucide-react"
+import { Layers, Palette, Cog, Plug, Database, Package, Smartphone, Code, MonitorDot } from "lucide-react"
 
 const features = [
   { icon: Layers, title: "Turbo Repo Monorepo", description: "Efficient monorepo structure" },
@@ -12,6 +12,10 @@ const features = [
 
 const upcomingFeatures = [
   { icon: Code, title: "React 19 Support", description: "Latest React features and improvements" },
+  { icon: Database, title: "ORM: Prisma & mongoose", description: "Flexible ORM options" },
+  { icon: Cog, title: "Backend: Hono", description: "Web application framework" },
+  { icon: MonitorDot, title: "Runtime: Bun / Node", description: "Powerfull Runtime Environment" },
+  { icon: Package, title: "Packages: Bun / Yarn", description: "Fast package management" },
 ]
 
 export default function Features() {
